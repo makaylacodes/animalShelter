@@ -55,7 +55,8 @@ class AnimalShelter(object):
 # Create method to implement the U in CRUD.
     def update(self, query, updatedDoc):
         if query is not None:
-            updatedData = self.database.animals.update_one(query, {"$set": updatedDoc})  # data should be dictionary            
+            # data should be dictionary            
+            updatedData = self.database.animals.update_one(query, {"$set": updatedDoc}) 
             return updatedData.modified_count
         else:
             return []
@@ -63,7 +64,8 @@ class AnimalShelter(object):
 # Create method to implement the D in CRUD.
     def delete(self, query):
         if query is not None:
-            toBeDeleted = self.database.animals.delete_one(query)  # data should be dictionary            
+            # data should be dictionary  
+            toBeDeleted = self.database.animals.delete_one(query)            
             return toBeDeleted.deleted_count
         else:
             return []
