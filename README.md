@@ -8,15 +8,15 @@ This program will maintain a database of animals that categorizes them by breed,
 - [Installation](#installation)
 - [Getting Started - Backend](#getting-started---backend)
 - [API Usage](#api-usage)
-- [Create API Code](#create-api-code)
-- [Read API Code](#read-api-code)
-- [Update API Code](#update-api-code)
-- [Delete API Code](#delete-api-code)
+	- [Create API Code](#create-api-code)
+	- [Read API Code](#read-api-code)
+	- [Update API Code](#update-api-code)
+	- [Delete API Code](#delete-api-code)
 - [API Tests](#api-tests)
-- [Create Test](#create-test)
-- [Read Test](#read-test)
-- [Update Test](#update-test)
-- [Delete Test](#delete-test)
+	- [Create Test](#create-test)
+	- [Read Test](#read-test)
+	- [Update Test](#update-test)
+	- [Delete Test](#delete-test)
 - [Getting Started - Frontend](#getting-started---frontend)
 - [Application Development Process](#application-development-process--lessons-learned)
 
@@ -39,10 +39,9 @@ Use this dashboard to help you find animals that are ready to be trained! You ca
 
 ## Installation
 
-Python
-Python IDE, like Spyder
-Jupyter Notebook
-aac_shelter_outcomes.csv
+- Python
+- Python IDE, like Spyder
+- Jupyter Notebook
 
 ## Getting Started - Backend
 
@@ -63,8 +62,9 @@ To get a local copy up and running, follow these simple example steps:
 ## API Usage
 Use the CRUD API to find, add, update, or delete animals listed in the csv file. 
 
+Note: Keys like the username, password, port, etc are already in the code and should require no additional authentication keys as the authentication string is “hard coded”.
+
 Code Example
-Keys like the username, password, port, etc are already in the code and should require no additional authentication keys as the authentication string is “hard coded”.
 
 ### Create API Code
 
@@ -124,8 +124,10 @@ I developed this application in a Client/Server development course. We used Pyth
 
 
 To make creating dynamic charts and tables easier, I used Dash, a python framework. I simply had to call the necessary component, like Graph, and pass my data for it to be immediately displayed in a chart. I heavily utilized the following two sites/guides to help with building the dashboard:
-	https://dash.plotly.com/tutorial
-	https://www.mongodb.com/docs/manual/crud/ 
+	
+ https://dash.plotly.com/tutorial
+	
+ https://www.mongodb.com/docs/manual/crud/ 
 
 
 Creating the dashboard was not easy at first. I had trouble connecting the radio buttons to the main data table. I had to start over multiple times and take the code line by line and test that the code was working as intended on the dashboard before trying to add another feature. Once I broke it down enough to understand how to send data to the appropriate functions for the charts on the dashboard, I was able to finish with relatively few issues. One of the smaller issues I had is: at one point I had a fully working chart and map but would sometimes get an error for not having a default row selected for the map to display a location. I reached out to my professor, and it was an easy fix. 
