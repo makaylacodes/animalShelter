@@ -18,4 +18,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 3000
 
 # Command used to start application 
-CMD ["python", "animalShelter"]
+CMD ["python", "animalShelterMain"]
