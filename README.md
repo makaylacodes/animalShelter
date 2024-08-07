@@ -48,10 +48,11 @@ Use this dashboard to help you find animals that are ready to be trained! You ca
 To get a local copy up and running, follow these simple example steps:
 1.	Pull this respository to your local machine.
 
-2. Open a terminal in the project's root folder. and import the aac_shelter_outcomes.csv file by using the following:
+2. Open a terminal in the project's root folder. and import the aac_shelter_outcomes.csv file by using the following (*Ignore the file structure, when you pull the repository, everything is in the main folder*):
+
 ![Import CSV file](./readme-imgs/gs-backend-import-csv.png)
 
-3. To make changes, like creating a query or index, a new user must be created. Open a new terminal in the project's root folder and run the mongosh command. This will open the MongoDB shell:
+3. To make changes, like creating a query or index, a new user must be created. Open a new terminal in the project's root folder and run the mongosh command. This will open the MongoDB shell (*Ignore the file structure, when you pull the repository, everything is in the main folder*):
 ![Run Mongosh Cmd](./readme-imgs/run-mongosh-cmd.png)
 
 4. Once successfully connected to the Mongosh shell, enter the command **use admin** to switch to the admin database. Then create a user and verify that it’s been connected:
